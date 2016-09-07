@@ -14,10 +14,10 @@
 .jswindow .window-content-container{min-height:20px;padding:5px;height:40%;overflow:auto;margin:2px;}
 .jswindow .window-content{height:99%;overflow: scroll;white-space: nowrap;}
 .jswindow .resize-window{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;float:right;cursor:move;position:relative;bottom:21px;right:0px;padding:0 3px 0 6px;}
-.jswindow.plain{background:#BBB;}.jswindow.plain .window-top p.window-title{background:#333;color:white;}
+.jswindow.plain{background:#BBB;}.jswindow.plain .window-top p.window-title{background:#1e90ff;color:white;}
 .jswindow.plain .window-top .close-window-button b{font-size:.8em;}
-.jswindow.plain .window-top .close-window-button:hover{background:#800;}
-.jswindow.plain .window-top .close-window-button:active{background:#550000;}
+.jswindow.plain .window-top .close-window-button:hover{background:#0000ff;}
+.jswindow.plain .window-top .close-window-button:active{background:#0000ff;}
 .jswindow.plain .window-content-container{background:#ffffff;}
 .jswindow.softblue{background:#777;border-top-left-radius:15px 15px;border-top-right-radius:15px 15px;}.jswindow.softblue .window-top p.window-title{background:#1e5799;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #1e5799), color-stop(1, rgba(125, 185, 232, 0.85)));background:-ms-linear-gradient(bottom, #1e5799, rgba(125, 185, 232, 0.85));background:-moz-linear-gradient(center bottom, #1e5799 0%, rgba(125, 185, 232, 0.85) 100%);background:-o-linear-gradient(rgba(125, 185, 232, 0.85), #1e5799);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(125, 185, 232, 0.85)', endColorstr='#1e5799', GradientType=0);border-top-left-radius:15px 15px;border-top-right-radius:15px 15px;}
 .jswindow.softblue .window-top .close-window-button{border-top-right-radius:15px 15px;border-bottom-left-radius:10px 15px;background:#1f1f1f;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #1f1f1f), color-stop(1, #969696));background:-ms-linear-gradient(bottom, #1f1f1f, #969696);background:-moz-linear-gradient(center bottom, #1f1f1f 0%, #969696 100%);background:-o-linear-gradient(#969696, #1f1f1f);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#1f1f1f', GradientType=0);}

@@ -33,7 +33,7 @@ $(document).ready(function() {
         if(ENV_2046_CCP_VM_Journal_id == 0) {
 
             ENV_2046_CCP_VM_Journal_id = wingroup.appendWindow({
-                theme: "mac",
+                theme: "plain",
                 title: "Log: <b>CCP-VM</b>",
                 content: text_content,
                 top:win_top, left:win_left, width:500, height:300
@@ -66,7 +66,7 @@ $(document).ready(function() {
     $("#openall").click( function() {
         if (ENV_2046_CCP_VM_Journal_id == 0) {
             ENV_2046_CCP_VM_Journal_id = wingroup.appendWindow({
-                theme: "mac",
+                theme: "plain",
                 title: "Log: <b>CCP-VM</b>",
                 content: text_content,
                 top:100, left:100, width:500, height:300
@@ -75,7 +75,7 @@ $(document).ready(function() {
         }
         if (ENV_2046_CELL_VM_Journal_id == 0) {
             ENV_2046_CELL_VM_Journal_id = wingroup.appendWindow({
-                theme: "mac",
+                theme: "plain",
                 title: "Log: <b>CELL-VM</b>",
                 content: text_content,
                 top:100, left:620, width:500, height:300
@@ -84,7 +84,7 @@ $(document).ready(function() {
         }
         if (ENV_2046_UE_VM_Journal_id == 0) {
             ENV_2046_UE_VM_Journal_id = wingroup.appendWindow({
-                theme: "mac",
+                theme: "plain",
                 title: "Log: <b>UE-VM</b>",
                 content: text_content,
                 top:420, left:100, width:500, height:300
@@ -93,7 +93,7 @@ $(document).ready(function() {
         }
         if (ENV_2046_OAM_VM_Journal_id == 0) {
             ENV_2046_OAM_VM_Journal_id = wingroup.appendWindow({
-                theme: "mac",
+                theme: "plain",
                 title: "Log: <b>OAM-VM</b>",
                 content: text_content,
                 top:420, left:620, width:500, height:300
