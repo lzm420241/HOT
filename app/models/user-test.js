@@ -74,6 +74,11 @@ User.findByEmailOrQuery = function(email,query,callback) {
     callback(null, foundUser);
 };
 
+
+User.latest = function() {
+    return users[0].fullName;
+};
+
 User.dump = function() {
     console.log(users);
 };

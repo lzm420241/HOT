@@ -23,8 +23,11 @@ $(document).ready(function(){
             }
         });
     };
-    
-    if (!$('.login-content')[0]) {
-        notify('Welcome back Mallinda Hollaway', 'inverse');
-    } 
+
+    $.get("/username", function(result){
+        $('#Active_User span').text(result);
+        if (!$('.login-content')[0]) {
+            notify('Welcome back '+result, 'inverse');
+        }
+    });
 });

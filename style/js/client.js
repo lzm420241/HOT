@@ -102,6 +102,7 @@ $(document).ready(function() {
         }
     });
 
+
     setInterval(function() {
         WindowId.forEach(function(my_win_id) {
             var now = new Date();

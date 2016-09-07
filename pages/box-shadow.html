@@ -38,6 +38,40 @@
                 width: 100%;
                 font-weight: bold;
             }
+            .dropdown-basic-demo {
+                display: inline-block;
+                margin: 0 0px 20px 0;
+                width: 150px;
+            }
+            .dropdown-menu {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              z-index: 9;
+              display: none;
+              float: left;
+              min-width: 130px;
+              padding: 5px 0;
+              margin: 2px 0 0;
+              list-style: none;
+              font-size: 13px;
+              text-align: center;
+              background-color: #ffffff;
+              border: 1px solid transparent;
+              border-radius: 2px;
+              -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+              background-clip: padding-box;
+            }
+            .dropdown-basic-demo .dropdown-menu {
+                display: block;
+                position: relative;
+                transform: scale(1);
+                opacity: 1;
+                filter: alpha(opacity=1);
+                z-index: 0;
+                width: 150px;
+            }
         </style>
     </head>
     
@@ -53,7 +87,7 @@
                 </li>
             
                 <li class="logo hidden-xs">
-                    <a href="index-2.html">HOME OF TESTER</a>
+                    <a href="/success">HOME OF TESTER</a>
                 </li>
                 
                 <li class="pull-right">
@@ -308,7 +342,7 @@
                 <div class="sidebar-inner">
                     <div class="si-inner">
                         <div class="profile-menu">
-                            <a href="#">
+                            <a href="/success">
                                 <div class="profile-pic">
                                     <img src="img/profile-pics/1.jpg" alt="">
                                 </div>
@@ -331,13 +365,13 @@
                                     <a href="#"><i class="md md-settings"></i> Settings</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="md md-history"></i> Logout</a>
+                                    <a href="/logout"><i class="md md-history"></i> Logout</a>
                                 </li>
                             </ul>
                         </div>
                 
                         <ul class="main-menu">
-                            <li><a href="index-2.html"><i class="md md-home"></i> Home</a></li>
+                            <li><a href="/success"><i class="md md-home"></i> Home</a></li>
                             <li><a href="typography.html"><i class="md md-format-underline"></i> Typography</a></li>
                             <li class="sub-menu">
                                 <a href="#"><i class="md md-now-widgets"></i> Widgets</a>
@@ -573,6 +607,90 @@
                             <h2>Test ENV #2046</h2>
                         </div>
                         
+
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-indigo" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Journal Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Statistic</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">CCP VM</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-blue" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Journal Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Statistic</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">CELL VM</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-teal" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Journal Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Statistic</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">OAM VM</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-orange" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Journal Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Statistic</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">UE VM 1</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-bluegray" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Journal Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Statistic</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">UE VM 2</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown-basic-demo clearfix">
+                                <ul class="dropdown-menu bgm-green" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">BTSLOG</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">App Log</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TTI Trace</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UP packet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Msg Seq</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="f-700">RAP</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                        <!--[if true]>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
@@ -633,6 +751,8 @@
                                 </tbody>
                             </table>
                         </div>
+                        <![endif]-->
+
                         <div id='windows_div'></div>
                         <input id='openall' type=button value='Open All' />
                         <input id='closeall' type=button value='Close All'/>
