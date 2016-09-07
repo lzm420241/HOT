@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Material Admin</title>
+        <title>HOME OF TESTER</title>
     
         <!-- Vendor CSS -->
         <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
@@ -17,17 +17,26 @@
         <!-- CSS -->
         <link href="css/app.min.1.css" rel="stylesheet">
         <link href="css/app.min.2.css" rel="stylesheet">
-        
+        <link href='css/jsWindow_style.css' rel='stylesheet' type='text/css'/>
         <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
         <style type="text/css">
             .bs-item {
                 background: #fff;
-                margin-bottom: 30px;
-                height: 100px;
-                text-align: center;
-                padding: 10px;
-                font-size: 14px;
+                box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
                 border-radius: 2px;
+                padding: 20px 20px 20px;
+                width: auto;
+                height: auto;
+                text-align: center;
+                font-size: 12px;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+            }
+            .btn-demo > .btn, .btn-group-demo > .btn-group {
+                margin: 0 5px 0px 0;
+                width: 100%;
+                font-weight: bold;
             }
         </style>
     </head>
@@ -44,7 +53,7 @@
                 </li>
             
                 <li class="logo hidden-xs">
-                    <a href="index-2.html">Material Admin</a>
+                    <a href="index-2.html">HOME OF TESTER</a>
                 </li>
                 
                 <li class="pull-right">
@@ -305,7 +314,7 @@
                                 </div>
                 
                                 <div class="profile-info">
-                                    Malinda Hollaway
+                                    Home Of Tester
                 
                                     <i class="md md-arrow-drop-down"></i>
                                 </div>
@@ -356,7 +365,7 @@
                                     <li><a href="form-validations.html">Form Validation</a></li>
                                 </ul>
                             </li>
-                            <li class="sub-menu active">
+                            <li class="sub-menu">
                                 <a href="#"><i class="md md-swap-calls"></i>User Interface</a>
                                 <ul>
                                     <li><a href="colors.html">Colors</a></li>
@@ -555,126 +564,78 @@
                     </div>
                 </div>
             </aside>
-        
-        
+
+
             <section id="content">
                 <div class="container">
-                    
-                    <!-- Top & Bottom -->
-                    <div class="m-b-30">
-                        <div class="block-header">
-                            <h2>Top & Bottom</h2>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Test ENV #2046</h2>
                         </div>
-                    
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-1">
-                                    .z-depth-1 / .z-depth(1)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-2">
-                                    .z-depth-2 / .z-depth(2)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-3">
-                                    .z-depth-3 / .z-depth(3)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-4">
-                                    .z-depth-4 / .z-depth(4)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-5">
-                                    .z-depth-5 / .z-depth(5)
-                                </div>
-                            </div>
+                        
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>CCP VM</th>
+                                        <th>CELL VM</th>
+                                        <th>UE VM</th>
+                                        <th>OAM VM</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="info">
+                                        <td>
+                                            <div class="bs-item">
+                                            <div class="btn-colors btn-demo"> 
+                                                <button class="btn bgm-cyan" id="ENV_2046_CCP_VM_Journal">Journal Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CCP_VM_App">APP Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CCP_VM_Cp">CP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CCP_VM_Up">UP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CCP_VM_Msg">MSG SEQ</button>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="bs-item">
+                                            <div class="btn-colors btn-demo"> 
+                                                <button class="btn bgm-cyan" id="ENV_2046_CELL_VM_Journal">Journal Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CELL_VM_App">APP Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CELL_VM_Cp">CP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CELL_VM_Up">UP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_CELL_VM_Msg">MSG SEQ</button>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="bs-item">
+                                            <div class="btn-colors btn-demo"> 
+                                                <button class="btn bgm-cyan" id="ENV_2046_UE_VM_Journal">Journal Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_UE_VM_App">APP Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_UE_VM_Cp">CP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_UE_VM_Up">UP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_UE_VM_Msg">MSG SEQ</button>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="bs-item">
+                                            <div class="btn-colors btn-demo"> 
+                                                <button class="btn bgm-cyan" id="ENV_2046_OAM_VM_Journal">Journal Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_OAM_VM_App">APP Log</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_OAM_VM_Cp">CP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_OAM_VM_Up">UP packet</button></br>
+                                                <button class="btn bgm-cyan" id="ENV_2046_OAM_VM_Msg">MSG SEQ</button>
+                                            </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    
-                    <!-- Top Only -->
-                    <div class="m-b-30">
-                        <div class="block-header">
-                            <h2>Top Only</h2>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-1-top">
-                                    .z-depth-1-top / .z-depth(1)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-2-top">
-                                    .z-depth-2-top / .z-depth-top(2)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-3-top">
-                                    .z-depth-3-top / .z-depth-top(3)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-4-top">
-                                    .z-depth-4-top / .z-depth-top(4)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-5-top">
-                                    .z-depth-5-top / .z-depth-top(5)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Bottom Only -->
-                    <div class="m-b-30">
-                        <div class="block-header">
-                            <h2>Bottom Only</h2>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-1-bottom">
-                                    .z-depth-1-bottom / .z-depth(1)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-2-bottom">
-                                    .z-depth-2-bottom / .z-depth-bottom(2)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-3-bottom">
-                                    .z-depth-3-bottom / .z-depth-bottom(3)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-4-bottom">
-                                    .z-depth-4-bottom / .z-depth-bottom(4)
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-4 col-xs-6">
-                                <div class="bs-item z-depth-5-bottom">
-                                    .z-depth-5-bottom / .z-depth-bottom(5)
-                                </div>
-                            </div>
-                        </div>
+                        <div id='windows_div'></div>
+                        <input id='showme' type=button value='Open Log' />
+                        <input id='closeme' type=button value='Close All'/>
                     </div>
                 </div>
             </section>
@@ -733,8 +694,9 @@
         
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
-        
-    
+        <script src='js/jsWindow.js'></script>
+        <script src='js/client.js'></script>
+
     </body>
 
 <!-- Mirrored from byrushan.com/projects/ma/v1-3-1/box-shadow.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:19:40 GMT -->

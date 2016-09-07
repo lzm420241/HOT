@@ -29,7 +29,7 @@
     });
 })();
 
-    
+
 /*
  * Detact Mobile Browser
  */
