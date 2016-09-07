@@ -14,10 +14,6 @@ var win_top = 100;
 var win_left = 200;
 
 
-var ENV_2046_CCP_VM_Journal_status = 0;
-var ENV_2046_CELL_VM_Journal_status = 0;
-var ENV_2046_UE_VM_Journal_status = 0;
-var ENV_2046_OAM_VM_Journal_status = 0;
 
 var ENV_2046_CCP_VM_Journal_id = 0;
 var ENV_2046_CELL_VM_Journal_id = 0;
@@ -34,8 +30,7 @@ $(document).ready(function() {
     });
     */
     $("#ENV_2046_CCP_VM_Journal").click( function() {
-        if(ENV_2046_CCP_VM_Journal_status == 0) {
-            ENV_2046_CCP_VM_Journal_status = 1;
+        if(ENV_2046_CCP_VM_Journal_id == 0) {
 
             ENV_2046_CCP_VM_Journal_id = wingroup.appendWindow({
                 theme: "mac",
@@ -46,19 +41,65 @@ $(document).ready(function() {
             WindowId.push(ENV_2046_CCP_VM_Journal_id);
 
         }else {
-            ENV_2046_CCP_VM_Journal_status = 0;
             wingroup.remove_window(ENV_2046_CCP_VM_Journal_id);
             ENV_2046_CCP_VM_Journal_id = 0;
         }
     });
-    $("#closeme").click( function() {
-        temp_array = WindowId;
-        WindowId = [];
-        win_top = 100;
-        win_left = 200;
-        temp_array.forEach(function(my_win_id) {
-            wingroup.remove_window(my_win_id);
-        });
+    $("#closeall").click( function() {
+        if (ENV_2046_CCP_VM_Journal_id != 0) {
+            wingroup.remove_window(ENV_2046_CCP_VM_Journal_id);
+            ENV_2046_CCP_VM_Journal_id = 0;
+        }
+        if (ENV_2046_CELL_VM_Journal_id != 0) {
+            wingroup.remove_window(ENV_2046_CELL_VM_Journal_id);
+            ENV_2046_CELL_VM_Journal_id = 0;
+        }
+        if (ENV_2046_UE_VM_Journal_id != 0) {
+            wingroup.remove_window(ENV_2046_UE_VM_Journal_id);
+            ENV_2046_UE_VM_Journal_id = 0;
+        }
+        if (ENV_2046_OAM_VM_Journal_id != 0) {
+            wingroup.remove_window(ENV_2046_OAM_VM_Journal_id);
+            ENV_2046_OAM_VM_Journal_id = 0;
+        }
+    });
+    $("#openall").click( function() {
+        if (ENV_2046_CCP_VM_Journal_id == 0) {
+            ENV_2046_CCP_VM_Journal_id = wingroup.appendWindow({
+                theme: "mac",
+                title: "Log: <b>CCP-VM</b>",
+                content: text_content,
+                top:100, left:100, width:500, height:300
+            });
+            WindowId.push(ENV_2046_CCP_VM_Journal_id);
+        }
+        if (ENV_2046_CELL_VM_Journal_id == 0) {
+            ENV_2046_CELL_VM_Journal_id = wingroup.appendWindow({
+                theme: "mac",
+                title: "Log: <b>CELL-VM</b>",
+                content: text_content,
+                top:100, left:620, width:500, height:300
+            });
+            WindowId.push(ENV_2046_CELL_VM_Journal_id);
+        }
+        if (ENV_2046_UE_VM_Journal_id == 0) {
+            ENV_2046_UE_VM_Journal_id = wingroup.appendWindow({
+                theme: "mac",
+                title: "Log: <b>UE-VM</b>",
+                content: text_content,
+                top:420, left:100, width:500, height:300
+            });
+            WindowId.push(ENV_2046_UE_VM_Journal_id);
+        }
+        if (ENV_2046_OAM_VM_Journal_id == 0) {
+            ENV_2046_OAM_VM_Journal_id = wingroup.appendWindow({
+                theme: "mac",
+                title: "Log: <b>OAM-VM</b>",
+                content: text_content,
+                top:420, left:620, width:500, height:300
+            });
+            WindowId.push(ENV_2046_OAM_VM_Journal_id);
+        }
     });
 
     setInterval(function() {
