@@ -6,7 +6,7 @@ var load_user = require('./users.json');
 var myfile = "app/models/users.json";
 var users = [];
 
-console.log(jsonfile.readFileSync(myfile));
+
 var User = function() {
 
     this._id = 0;
@@ -17,12 +17,14 @@ var User = function() {
         password: ''
     };
 };
+var latest_user = new User;
 
 User.prototype.generateHash = function(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
 User.prototype.validPassword = function(password) {
+    latest_user = this;
     return bcrypt.compareSync(password, this.local.password);
 };
 
@@ -42,6 +44,7 @@ User.prototype.save = function(callback) {
         this._id = uuid.v4();
         users.push(this);
         jsonfile.writeFileSync(myfile, users);
+        latest_user = this;
     }
     callback();
 };
@@ -82,7 +85,7 @@ User.findByEmailOrQuery = function(email,query,callback) {
 
 
 User.latest = function() {
-    return users[0].fullName;
+    return latest_user.fullName;
 };
 
 User.dump = function() {
@@ -90,12 +93,14 @@ User.dump = function() {
 };
 
 var temp = new User;
+console.log(load_user);
+console.log(load_user.length);
 for(var i = 0; i < load_user.length; i++) {
-    temp._id = load_user[i]._id;
-    temp.fullName = load_user[i].fullName;
-    temp.email = load_user[i].email;
-    temp.local = load_user[i].local;
-    users.push(temp);  
+    users[i] = new User;
+    users[i]._id = load_user[i]._id;
+    users[i].fullName = load_user[i].fullName;
+    users[i].email = load_user[i].email;
+    users[i].local = load_user[i].local;
 }
-
+console.log(users);
 module.exports = User;

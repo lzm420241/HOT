@@ -13,7 +13,6 @@ module.exports = function(app) {
 	});
 
 	app.get('/username', function(req, res){
-		User.dump();
 		res.send(User.latest());
 	});
 };
