@@ -1,7 +1,7 @@
 var bcrypt = require('bcrypt');
 var dottie = require('dottie');
 var uuid   = require('node-uuid');
-
+var load_user = require('./users.json');
 var users = [];
 
 var User = function() {
@@ -50,9 +50,11 @@ User.findOne = function(query,callback) {
     var key = Object.keys(query)[0];
     var value = query[key];
     var foundUser = false;
+
     for ( var i=0; i<users.length; i++ ) {
         var user = users[i];    
         var userValue = dottie.get(user,key);
+
         if ( userValue == value ) {
             foundUser = user;
         }
@@ -82,5 +84,14 @@ User.latest = function() {
 User.dump = function() {
     console.log(users);
 };
+
+var temp = new User;
+for(var i = 0; i < load_user.length; i++) {
+    temp._id = load_user[i]._id;
+    temp.fullName = load_user[i].fullName;
+    temp.email = load_user[i].email;
+    temp.local = load_user[i].local;
+    users.push(temp);  
+}
 
 module.exports = User;
