@@ -1,7 +1,2 @@
-[
-    { "_id": "deac2095-c5cc-4eed-be35-0f487dc29e0e",
-      "fullName": "test",
-      "email": "test@test.com",
-      "local": { "password": "$2a$08$CXxSWbd/UmM8C1mu0ba.Su.SXbYWaMQHW5ZLfWJ/hQssU5uXMNDVW" } 
-    }
-]
+{"_id":"685ea912-2b77-4013-b8c8-1a36f7ce144c","fullName":"Hong","email":"h74zhang@sina.com","local":{"password":"$2a$08$iGqJIJbpylUY49jbiQ71keWTCDnopq/vA03u7Ad3.4djJ.9x8IgLq"}}
+{"_id":"0a665a6a-e72d-48a7-9062-ba5a041aaa83","fullName":"test","email":"test@test.com","local":{"password":"$2a$08$DhClukeYkwKcBW/332LtMOmky/H8q2F54c.IbcwsYtLG08LsEhIrC"}}

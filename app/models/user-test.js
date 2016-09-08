@@ -1,9 +1,12 @@
 var bcrypt = require('bcrypt');
 var dottie = require('dottie');
 var uuid   = require('node-uuid');
+var jsonfile = require('jsonfile')
 var load_user = require('./users.json');
+var myfile = "app/models/users.json";
 var users = [];
 
+console.log(jsonfile.readFileSync(myfile));
 var User = function() {
 
     this._id = 0;
@@ -37,7 +40,8 @@ User.prototype.save = function(callback) {
     }
     if (!foundUser) {
         this._id = uuid.v4();
-        users.push(this);    
+        users.push(this);
+        jsonfile.writeFileSync(myfile, this, {'flag':'a'});
     }
     callback();
 };
