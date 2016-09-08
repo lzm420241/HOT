@@ -41,7 +41,7 @@ User.prototype.save = function(callback) {
     if (!foundUser) {
         this._id = uuid.v4();
         users.push(this);
-        jsonfile.writeFileSync(myfile, this, {'flag':'a'});
+        jsonfile.writeFileSync(myfile, users);
     }
     callback();
 };

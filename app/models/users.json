@@ -1,2 +1,1 @@
-{"_id":"685ea912-2b77-4013-b8c8-1a36f7ce144c","fullName":"Hong","email":"h74zhang@sina.com","local":{"password":"$2a$08$iGqJIJbpylUY49jbiQ71keWTCDnopq/vA03u7Ad3.4djJ.9x8IgLq"}}
-{"_id":"0a665a6a-e72d-48a7-9062-ba5a041aaa83","fullName":"test","email":"test@test.com","local":{"password":"$2a$08$DhClukeYkwKcBW/332LtMOmky/H8q2F54c.IbcwsYtLG08LsEhIrC"}}
+[{"_id":"0a665a6a-e72d-48a7-9062-ba5a041aaa83","fullName":"test","email":"test@test.com","local":{"password":"$2a$08$DhClukeYkwKcBW/332LtMOmky/H8q2F54c.IbcwsYtLG08LsEhIrC"}},{"_id":"48a3abf3-e437-4eaa-afa0-dfab8f337790","fullName":"admin","email":"admin@admin.com","local":{"password":"$2a$08$D.usAOVgfborCtiwzyzoRuyK0WIfP8s4FWpdje3jHkEtgH5dUtXmi"}}]
